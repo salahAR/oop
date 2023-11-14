@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="photon.min.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" id="logo">DICTIONARY</a>
+      <nav class="navbar">
+        <a id="pageNow" href="#">Search Meanings</a>
+        <a href="synonym.html">Find Synonyms</a>
+        <a href="form.html">Saved Words</a>
+      </nav>
+    </header>
+    <article>
+      <center><div id="search_area">
+        <input type="text" id="search" placeholder="Search English">
+        <button id="search_btn" onclick="findMeaning()">Search</button>
+        <script src="function.js"></script>
+      </div></center>
+      <div id="search_result">
+        <p id="word"></p>
+        <audio id="audioData" controls></audio><br>
+        <a id="urlData" href=""></a>
+        <br><hr><br>
+        <p id="result_area"></p><br>
+
+        <button id="saveButton" onclick="saveWord()" class="btn btn-default"><a id="saveButtonFont" href="form.html">Save Word</a></button>
+        
+      </div>
+    </article>
+    <footer>
+    </footer>
+  </body>
+</html>
